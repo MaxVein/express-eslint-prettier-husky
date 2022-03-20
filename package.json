@@ -1,0 +1,43 @@
+{
+  "name": "mlw_be",
+  "version": "22.1.0",
+  "description": "MLW Project Back End",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "dev": "nodemon index",
+    "lint": "eslint /**/*.js",
+    "lint:fix": "eslint /**/*.js --fix",
+    "lint-staged": "lint-staged",
+    "prettier":"prettier --write *.js",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxVein/mlw_be.git"
+  },
+  "author": "MaxLav",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MaxVein/mlw_be/issues"
+  },
+  "homepage": "https://github.com/MaxVein/mlw_be#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "nodemon": "^2.0.15",
+    "prettier": "2.6.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
+}
