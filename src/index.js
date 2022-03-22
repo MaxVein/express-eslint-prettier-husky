@@ -1,10 +1,9 @@
 // import path from "path";
 import express from 'express';
-import mongoose from 'mongoose';
-import { credentials } from './configs/mongo.js';
+// import mongoose from 'mongoose';
+// import { credentials } from './configs/DatabaseConfig.js';
 import routes from './routes/authorization.js';
 
-// eslint-disable-next-line no-undef
 const PORT = process.env.PORT || 3000;
 
 const app = express();
