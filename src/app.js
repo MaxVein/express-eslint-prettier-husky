@@ -2,7 +2,7 @@
 import express from 'express';
 // import mongoose from 'mongoose';
 // import { credentials } from './configs/DatabaseConfig.js';
-import routes from './routes/authorization.js';
+import routes from './api/routes/ExampleRoutes.js';
 
 const PORT = process.env.PORT || 3000;
 
@@ -21,7 +21,7 @@ app.use(routes);
 // 				useNewUrlParser: true,
 // 			},
 // 		);
-	
+
 // 	} catch (e) {
 // 		console.log(e);
 // 	}
